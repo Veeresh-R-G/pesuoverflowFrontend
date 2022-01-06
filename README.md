@@ -1,8 +1,4 @@
 # pesuoverflowFrontend
 
-Yet to-do :  <br/>
-conversation thingy<br/> --> Currently Doing this 
+Checkout front_End branch for front end file
 
-
-ALSO IN THE README I will include which component does what work to make life easier ......
-PEASS ...........................
