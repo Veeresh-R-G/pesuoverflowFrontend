@@ -21,6 +21,8 @@ module.exports = {
       width: {
         'myWidth': '50rem', // this is for team / project
         'myWidth2': '52rem', //this is for inidividual style
+        'myWidth3': '78rem', //this is for Quil - Board styling
+        'myWidth4': '75rem', //this is for Quil - Board styling
       }
     },
   },
