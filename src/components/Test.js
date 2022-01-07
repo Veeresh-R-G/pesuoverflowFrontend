@@ -1,9 +1,18 @@
+import Navbar from "./Navbar";
 import TeamDashCon from "./TeamDashCon";
 
-const TeamDashboard = (props) => {
+const Test = (props) => {
     let list = [1, 2, 4, 5, 6, 7];
     return (
         <div className="team-dashBoard flex flex-col bg-slate-200">
+
+            {
+                /*
+                    Navbar component
+                    Dont Change anything (unless its the styles) here in Navbar here 
+                */
+            }
+            {/* <Navbar /> */}
 
             {
                 /*
@@ -24,4 +33,4 @@ const TeamDashboard = (props) => {
     );
 }
 
-export default TeamDashboard;
+export default Test;

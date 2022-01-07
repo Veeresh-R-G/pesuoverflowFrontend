@@ -1,8 +1,13 @@
+/*
+
+
+
+*/
 import GaugeChart from 'react-gauge-chart'
 const ProMeter = (props) => {
     return (
 
-        <div className="meter bg-black h-80 w-72 ml-10 mt-10 mb-10 mr-9 rounded-lg p-2">
+        <div className="meter bg-black h-72 w-56 ml-10 mt-6 mb-4 mr-9 rounded-lg pt-1">
             <h1 className="font-bold text-2xl mt-10 mb-16 uppercase  text-emerald-200" style={{ textAlign: "center" }}> Progress Meter</h1>
             <GaugeChart className="text-black" id="gauge-chart1"
 
