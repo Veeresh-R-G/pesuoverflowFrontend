@@ -8,6 +8,7 @@ import QuilEditor from './components/QuilEditor';
 import ChatComponent from './components/ChatComponent';
 import Test from './components/Test';
 import Navbar from './components/Navbar';
+import CardProject from './components/CardProject';
 function App() {
   return (
 
@@ -37,6 +38,9 @@ function App() {
             </Route>
             <Route exact path="/team">
               <TeamDashboard />
+            </Route>
+            <Route exact path="/card">
+              <CardProject />
             </Route>
 
           </Switch>

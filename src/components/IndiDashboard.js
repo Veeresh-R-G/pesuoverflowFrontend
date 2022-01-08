@@ -4,7 +4,7 @@ const Dashboard = (props) => {
 
     return (
 
-        <div className="indi-dash flex flex-col bg-slate-300 h-screen">
+        <div className="indi-dash flex flex-col bg-slate-300 h-full">
 
             {
                 /*
@@ -12,6 +12,7 @@ const Dashboard = (props) => {
                     We can set through props
                 */
             }
+            <IndiDashCon />
             <IndiDashCon />
 
         </div>

@@ -20,7 +20,7 @@ const IndiDashCon = () => {
                 </svg>
             </button>
 
-            <input className="absolute p-3 w-myWidth top-4 ml-72 outline-none rounded-full" type="search" name="search" placeholder="    Search" />
+            <input className="absolute p-3 pl-7 w-myWidth top-4 ml-72 outline-none rounded-full" type="search" name="search" placeholder=" Search" />
 
 
             {
@@ -28,11 +28,11 @@ const IndiDashCon = () => {
                     We are going to access all details through props
                 */
             }
-            <div className="indi-content w-myWidth rounded-lg border-[6px] border-slate-400 bg-gray-100 ml-72 pl-3 mt-14">
-                <img src={img1} alt="" className="w-16 h-16 rounded-lg mt-3" />
-                <span>
-                    <h1 className='text-4xl font-black uppercase mt-4 ml-20 pb-2 animate-bounce absolute top-20'>
-                        <span className="">HEy, i am  </span>
+            <div className="indi-content w-myWidth rounded-lg border-[6px] border-slate-400 bg-gray-100 ml-72 pl-2 mt-14">
+                <img src={img1} alt="" className="w-16 h-16 rounded-lg mt-2" />
+                <span className='relative'>
+                    <h1 className='text-4xl font-black uppercase ml-20 pb-2 animate-bounce'>
+                        <span>HEy, i am  </span>
                         <span className="underline">{NAME_HERE}</span>
                     </h1>
                 </span>
@@ -72,10 +72,9 @@ const IndiDashCon = () => {
                 <div className="links-project ml-20 text-lg">
                     {/* 
                         
-                        This was Appraoch One but problem I think would be to give the project
-                        links
-
-                        If thats stored in the DB then use this else Use the latter One
+                        This was Appraoch-1 but i still now aware about the schema whether
+                        it contains any field for storing the href's
+                        
                         {option2.map((item) =>
                         <a href={}>-{item} <br /></a>
                         )} 
@@ -88,7 +87,7 @@ const IndiDashCon = () => {
             </div>
 
 
-        </div >
+        </div>
     );
 }
 

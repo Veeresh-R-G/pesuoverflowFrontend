@@ -23,6 +23,7 @@ module.exports = {
         'myWidth2': '52rem', //this is for inidividual style
         'myWidth3': '78rem', //this is for Quil - Board styling
         'myWidth4': '75rem', //this is for Quil - Board styling
+        'myWidth5': '18rem', //this is for Card styling in the project-part
       }
     },
   },

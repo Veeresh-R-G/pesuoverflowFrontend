@@ -3,7 +3,7 @@ import ProDashCon from "./ProDashCon";
 const Project = () => {
     let list = [1, 2, 4, 5, 6, 7];
     return (
-        <div className="team-dashBoard flex flex-col bg-slate-300">
+        <div className="team-dashBoard flex flex-col bg-slate-300 h-full">
             {
                 /*
                     1. This is Main DashBaord Component of Each Individual Component
@@ -12,9 +12,11 @@ const Project = () => {
                 */
             }
 
-            {
-                list.map((item) => <ProDashCon id={item} />)
-            }
+
+            <ProDashCon />
+            <ProDashCon />
+            <ProDashCon />
+
         </div>
 
     );
