@@ -1,7 +1,6 @@
 
 import ProDashCon from "./ProDashCon";
 const Project = () => {
-    let list = [1, 2, 4, 5, 6, 7];
     return (
         <div className="team-dashBoard flex flex-col bg-slate-300 h-full">
             {

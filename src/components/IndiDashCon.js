@@ -5,7 +5,7 @@ const IndiDashCon = () => {
     let PROJECT_NAME_HERE = "<PROJECT>"
     let options = ["opt1", "opt1", "opt1", "opt1"]
     let option2 = ["opt1", "opt1", "opt1"]
-    let option3 = ["pro1", "pro1", "pro1"]
+
 
     return (
         <div className="flex flex-row dash-main text-black w-full h-screen mt-4 mb-6">
