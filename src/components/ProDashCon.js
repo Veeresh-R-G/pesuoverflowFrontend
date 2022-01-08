@@ -45,22 +45,22 @@ const ProDashCon = () => {
                         Outline added only for reference of the proper placement and position 
                     */
                 }
-                <div className="text-xl mt-20 border border-amber-500 h-36 mr-5 outline-dotted">
+                <div className="text-xl mt-20 h-36 mr-5">
                     <p>Hello I am Spider-Man of avengers(Its not a musical Band) 🤣😂😂</p>
                     <p>We are looking for</p>
                     {option3.map(item =>
                         <p> &nbsp;--{item}</p>)}
                 </div>
 
-                {/* dump code :
-                mt-3 mr-2 pl-4
-                 */}
-                <div className="cards-here grid grid-cols-3 border-2 border-cyan-500 mt-3">
+                <h1 className="text-2xl font-semibold">Our Team:</h1>
+                <div className="cards-here grid grid-cols-3  mt-3">
                     <CardProject />
                     <CardProject />
                     <CardProject />
                     <CardProject />
-
+                    <CardProject />
+                    <CardProject />
+                    <CardProject />
                 </div>
             </div>
 

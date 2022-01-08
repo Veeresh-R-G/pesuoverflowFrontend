@@ -9,15 +9,16 @@ import ChatComponent from './components/ChatComponent';
 import Test from './components/Test';
 import Navbar from './components/Navbar';
 import CardProject from './components/CardProject';
+import ClubDashBoard from './components/ClubDashBoard';
+import ClubDashCon from './components/ClubDashCon';
 function App() {
   return (
 
-    <Router className='m-0 p-0'>
+    <Router>
       <div className="App">
         <div className='content'>
           <Navbar />
           <Switch>
-
             <Route exact path="/">
               <TeamDashboard />
             </Route>
@@ -42,12 +43,14 @@ function App() {
             <Route exact path="/card">
               <CardProject />
             </Route>
-
+            <Route exact path="/club">
+              <ClubDashBoard />
+            </Route>
+            <Route exact path="/test">
+              <Test />
+            </Route>
           </Switch>
-
         </div>
-
-
       </div>
     </Router>
   );

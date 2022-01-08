@@ -1,34 +1,21 @@
-import Navbar from "./Navbar";
-import TeamDashCon from "./TeamDashCon";
-
+import { Carousel } from "react-responsive-carousel";
+import img1 from './des.png';
 const Test = (props) => {
-    let list = [1, 2, 4, 5, 6, 7];
     return (
-        <div className="team-dashBoard flex flex-col bg-slate-200">
-
-            {
-                /*
-                    Navbar component
-                    Dont Change anything (unless its the styles) here in Navbar here 
-                */
-            }
-            {/* <Navbar /> */}
-
-            {
-                /*
-                    1. This is Main DashBaord Component of Each Individual Component
-                    Here I have Made that too as an independent component
-                    Since you can render multiple <TeamDashCon /> by passing in appropriate props
-                    using map function
-
-                    2. Below using map , I have rendered mulitple component just for testing purposes
-                */
-            }
-            {
-                list.map((item) =>
-                    <TeamDashCon key={item} />)
-            }
-        </div>
+        <Carousel className="w-96">
+            <div>
+                <img src={img1} className="w-10 h-10" />
+                <p className="legend">Legend 1</p>
+            </div>
+            <div>
+                <img src={img1} className="w-10 h-10" />
+                <p className="legend">Legend 2</p>
+            </div>
+            <div>
+                <img src={img1} className="w-10 h-10" />
+                <p className="legend">Legend 3</p>
+            </div>
+        </Carousel>
 
     );
 }
