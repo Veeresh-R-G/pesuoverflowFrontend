@@ -28,7 +28,7 @@ const IndiDashCon = () => {
                     We are going to access all details through props
                 */
             }
-            <div className="indi-content w-myWidth rounded-lg border-[6px] border-slate-400 bg-gray-100 ml-72 pl-2 mt-14">
+            <div className="indi-content w-myWidth rounded-lg border-[6px] border-slate-400 bg-white ml-72 pl-2 mt-14">
                 <img src={img1} alt="" className="w-16 h-16 rounded-lg mt-2" />
                 <span className='relative'>
                     <h1 className='text-4xl font-black uppercase ml-20 pb-2 animate-bounce'>
@@ -65,23 +65,22 @@ const IndiDashCon = () => {
             </div>
 
             <div className="team-logo-here border-[6px] border-gray-400 bg-white rounded-lg ml-7 mt-14">
-                <h1 className="font-medium text-3xl mt-2 mb-3 mx-10">Current Ticket:</h1>
+                <h1 className="font-medium text-3xl mt-2 mb-3 mx-10 uppercase">Current Ticket:</h1>
                 <h1 className='mx-14'>{NAME_HERE} of {PROJECT_NAME_HERE}</h1>
                 <ProMeter />
-                <h1 className='font-semibold text-2xl mx-16 mt-5'>Quick Links:</h1>
-                <div className="links-project ml-20 text-lg">
-                    {/* 
-                        
-                        This was Appraoch-1 but i still now aware about the schema whether
-                        it contains any field for storing the href's
-                        
+                <div className='w-56 h-56 ml-10'>
+                    <h1 className='font-semibold text-2xl uppercase underline decoration-dashed ml-8'>Quick Links:</h1>
+                    <div className="links-project text-lg ml-20 mt-3">
+                        {/*    
                         {option2.map((item) =>
                         <a href={}>-{item} <br /></a>
                         )} 
                     */}
 
-                    <a href="/indi">heheh1</a><br />
-                    <a href="/indi">heheh2</a><br />
+                        <a href="/indi" className='hover:text-violet-600'>heheh1</a> <br />
+                        <a href="/indi" className='hover:text-violet-600'>heheh2</a> <br />
+                        <a href="/indi" className='hover:text-violet-600'>heheh2</a> <br />
+                    </div>
                 </div>
 
             </div>

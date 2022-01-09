@@ -13,8 +13,6 @@ const Dashboard = (props) => {
                 */
             }
             <IndiDashCon />
-            <IndiDashCon />
-
         </div>
     );
 }
