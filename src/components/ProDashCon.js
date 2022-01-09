@@ -65,29 +65,26 @@ const ProDashCon = () => {
             </div>
 
             <div className="team-logo-here border-[4px] border-gray-400 bg-white rounded-lg  mt-14">
-                <h1 className="font-medium text-3xl mt-2 mb-3 mx-10">Current Ticket:</h1>
+                <h1 className="font-medium text-3xl mt-2 mb-3 mx-9">Ticket Directory:</h1>
                 <h1 className='mx-14'>{NAME_HERE} of {PROJECT_NAME_HERE}</h1>
                 <ProMeter />
-                <h1 className='font-semibold text-2xl mx-16 mt-5'>Quick Links:</h1>
-                <div className="links-project ml-20 text-lg">
-                    {/* 
-                        
-                        This was Appraoch One but problem I think would be to give the project
-                        links
-
-                        If thats stored in the DB then use this else Use the latter One
+                <div className='w-56 h-56 ml-10'>
+                    <h1 className='font-semibold text-2xl uppercase underline decoration-dashed ml-8'>Quick Links:</h1>
+                    <div className="links-project text-lg ml-20 mt-4">
+                        {/*    
                         {option2.map((item) =>
                         <a href={}>-{item} <br /></a>
                         )} 
                     */}
 
-                    <a href="/indi">heheh1</a><br />
-                    <a href="/indi">heheh2</a><br />
+                        <a href="/indi" className='hover:text-violet-600'>heheh1</a> <br />
+                        <a href="/indi" className='hover:text-violet-600'>heheh2</a> <br />
+                        <a href="/indi" className='hover:text-violet-600'>heheh2</a> <br />
+                    </div>
                 </div>
 
+
             </div>
-
-
         </div>
     );
 }
