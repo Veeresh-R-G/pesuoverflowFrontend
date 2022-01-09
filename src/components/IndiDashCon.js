@@ -70,7 +70,7 @@ const IndiDashCon = () => {
                 <ProMeter />
                 <div className='w-56 h-56 ml-10'>
                     <h1 className='font-semibold text-2xl uppercase underline decoration-dashed ml-8'>Quick Links:</h1>
-                    <div className="links-project text-lg ml-20 mt-3">
+                    <div className="links-project text-lg ml-20 mt-4">
                         {/*    
                         {option2.map((item) =>
                         <a href={}>-{item} <br /></a>
