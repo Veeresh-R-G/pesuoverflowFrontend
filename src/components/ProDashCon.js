@@ -1,11 +1,10 @@
 import ProMeter from "./ProgresMeter";
 import img1 from './des.png';
 import CardProject from "./CardProject";
-const ProDashCon = () => {
-    let NAME_HERE = "<NAME>";
-    let PROJECT_NAME_HERE = "<PROJECT>"
-    let XXX = "Project_Head"
-    let option3 = ["pro1", "pro1", "pro1"]
+const ProDashCon = ({project,tickets,statusNum}) => {
+    
+
+    const details=project.details;
     return (
         <div className="flex flex-row dash-main text-black w-full pl-1  h-auto mt-4 mb-6">
 
@@ -28,15 +27,15 @@ const ProDashCon = () => {
                 */
             }
             <div className="indi-content w-myWidth3 rounded-lg border-[4px] border-slate-400 bg-gray-100 ml-64 mr-1 pl-4 mt-14">
-                <img src={img1} alt="" className="w-56 h-56 rounded-lg mt-2 float-left mr-5" />
+                <img src={details.photoURL} alt="" className="w-56 h-56 rounded-lg mt-2 float-left mr-5" />
 
                 <div className='relative'>
                     <p className='text-4xl font-bold uppercase ml-28 pl-20 pt-8 pb-2'>
                         <span>PROJECT  </span>
-                        <span className="underline">{PROJECT_NAME_HERE}</span>
+                        <span className="underline">{project.title}</span>
                     </p>
                     <br /><br />
-                    <h3 className="text-2xl ml-5 font-semibold">contact : {XXX}</h3>
+                    <h3 className="text-2xl ml-5 font-semibold">contact : {details.contact.email}</h3>
                 </div>
 
 
@@ -46,28 +45,32 @@ const ProDashCon = () => {
                     */
                 }
                 <div className="text-xl mt-20 h-36 mr-5">
-                    <p>Hello I am Spider-Man of avengers(Its not a musical Band) 🤣😂😂</p>
-                    <p>We are looking for</p>
-                    {option3.map(item =>
-                        <p> &nbsp;--{item}</p>)}
+                    <p>{details.displayInfo}</p>
+                    
                 </div>
 
                 <h1 className="text-2xl font-semibold">Our Team:</h1>
                 <div className="cards-here grid grid-cols-3  mt-3">
-                    <CardProject />
-                    <CardProject />
-                    <CardProject />
-                    <CardProject />
-                    <CardProject />
-                    <CardProject />
-                    <CardProject />
+                    {
+                        project.people.map(({post,user})=>{
+                            return <CardProject name={user.name} photoURL={user.details.photoURL} post={post} key={user.id}/>
+                        })
+                    }
+                
                 </div>
             </div>
 
             <div className="team-logo-here border-[4px] border-gray-400 bg-white rounded-lg  mt-14">
-                <h1 className="font-medium text-3xl mt-2 mb-3 mx-10">Current Ticket:</h1>
-                <h1 className='mx-14'>{NAME_HERE} of {PROJECT_NAME_HERE}</h1>
-                <ProMeter />
+                <h1 className="font-medium text-3xl mt-2 mb-3 mx-10">Available Tickets:</h1>
+                
+                {
+                    tickets.map((item)=>(
+                        <h1 className='mx-14'><span className="font-bold">{item.name}</span>: {item.requirements.join(",")}</h1>
+                    )
+
+                    )
+                }
+                <ProMeter statusNum={statusNum}/>
                 <h1 className='font-semibold text-2xl mx-16 mt-5'>Quick Links:</h1>
                 <div className="links-project ml-20 text-lg">
                     {/* 

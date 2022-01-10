@@ -1,6 +1,6 @@
 import { Card } from "react-bootstrap";
 import img1 from './des.png';
-const CardProject = () => {
+const CardProject = ({name,photoURL,post}) => {
     let NAME = "SpiderMan"
     return (
 
@@ -8,13 +8,13 @@ const CardProject = () => {
             <a href='/card' className="">
                 <Card className="border-4 border-violet-600 w-myWidth5 h-48 rounded-xl bg-white hover:bg-slate-100">
                     <div className="border-b-2 border-violet-600 drop-shadow-xl mt-2 mx-10">
-                        <Card.Img variant="top" src={img1} className="ml-16 rounded-xxl border-4 border-white h-20 w-20 " />
+                        <Card.Img variant="top" src={photoURL} className="ml-16 rounded-xxl border-4 border-white h-20 w-20 " />
                     </div>
 
                     <Card.Body className="p-3 flex justify-center items-center flex-col">
-                        <Card.Title className="text-lg font-bold">{NAME}</Card.Title>
+                        <Card.Title className="text-lg font-bold">{name}</Card.Title>
                         <Card.Text>
-                            <h1 className='mt-2'>POST HERE</h1>
+                            <h1 className='mt-2'>{post}</h1>
                         </Card.Text>
                         {
                             /*

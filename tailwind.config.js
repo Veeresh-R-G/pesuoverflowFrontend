@@ -24,6 +24,9 @@ module.exports = {
         'myWidth3': '78rem', //this is for Quil - Board styling
         'myWidth4': '75rem', //this is for Quil - Board styling
         'myWidth5': '18rem', //this is for Card styling in the project-part
+      },
+      fontFamily:{
+        "google-sans":["Open Sans:wght@500"]
       }
     },
   },

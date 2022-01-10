@@ -1,6 +1,6 @@
 import img1 from './des.png';
 import CardProject from "./CardProject";
-const ClubDashCon = () => {
+const ClubDashCon = ({name,details,people,wallOfFame,picGallery}) => {
 
     let CLUB_NAME_HERE = "<CLUB_NAME>"
     let XXX = "Club_Head(If any)"
@@ -22,6 +22,8 @@ const ClubDashCon = () => {
         let marq = document.getElementById("mymarq2");
         marq.start();
     }
+
+    console.log(picGallery);
     return (
         <div className="flex flex-row dash-main pl-1 h-full mt-4 mb-6">
             {
@@ -42,42 +44,41 @@ const ClubDashCon = () => {
                 */
             }
             <div className="indi-content w-myWidth3 rounded-lg border-[4px] border-slate-400 bg-gray-100 ml-64 mr-1 pl-4 mt-14">
-                <img src={img1} alt="" className="w-56 h-56 rounded-lg mt-2 float-left mr-5" />
+                <img src={details.photoURL} alt="" className="w-56 h-56 rounded-lg mt-2 float-left mr-5" />
 
                 <div className='relative'>
                     <p className='text-4xl font-bold uppercase ml-28 pl-20 pt-8 pb-2'>
                         <span>CLUB  </span>
-                        <span className="underline">{CLUB_NAME_HERE}</span>
+                        <span className="underline">{name}</span>
                     </p>
                     <br />
-                    <h3 className="text-2xl ml-5 font-semibold">contact : {XXX}</h3>
+                    <h3 className="text-2xl ml-5 font-semibold">contact : {details.contact.email}</h3>
                 </div>
 
 
                 <h1 className="text-2xl font-semibold mt-28">Our Team:</h1>
                 <div className="cards-here grid grid-cols-3 mt-3">
-                    <CardProject />
-                    <CardProject />
-                    <CardProject />
-                    <CardProject />
-                    <CardProject />
-                    <CardProject />
-                    <CardProject />
+                    {
+                           // return <CardProject name={user.name} photoURL={user.details.photoURL} post={post} key={user.id}/>
+                            
+                        people.map(({post,user})=>(
+                            <CardProject name={user.name} photoURL={user.details.photoURL} post={post} key={user.id}/>
+                        ))
+                    }
+                    
                 </div>
 
                 <div className="text-xl h-36 mr-5">
-                    <p>Hello I am Spider-Man of avengers(Its not a musical Band) 🤣😂😂</p>
-                    <p>We are looking for</p>
-                    {option3.map(item =>
-                        <p> &nbsp;--{item}</p>)}
+                   <p> {details.displayInfo}</p>     
                 </div>
+
                 <div className="mt-20 mb-44 carousel-here ml-20 ">
                     <marquee id="mymarq2" behavior="scroll" direction="left"
                         className='w-myWidth h-auto text-lg border-4 border-slate-300 rounded-xl p-4 '
                         onMouseEnter={handleMouseOver2}
                         onMouseLeave={handleMouseDown2}>
-                        {option4.map((item) =>
-                            <img src={img1} className='inline w-24 h-24 mr-5'></img>)}
+                        {picGallery.map(({caption,uri}) =>
+                            <img className='inline w-24 h-24 mr-5' src={uri} />)}
                     </marquee>
                 </div>
             </div>
@@ -93,8 +94,8 @@ const ClubDashCon = () => {
                     hover:bg-slate-700 hover:text-white hover:border-white'
                     onMouseEnter={handleMouseOver}
                     onMouseLeave={handleMouseDown}>
-                    {option4.map((item) =>
-                        <a href='/club' className="uppercase mb-3 block over:text-violet-500 hover:underline">{item}</a>)}
+                    {wallOfFame.map((item) =>
+                        <a href='/club' className="uppercase mb-3 block over:text-violet-500 hover:underline">{item.name}</a>)}
                 </marquee>
 
             </div>

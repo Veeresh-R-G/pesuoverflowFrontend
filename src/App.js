@@ -6,7 +6,7 @@ import TeamDashboard from './components/TeamDashboard';
 import ProjectDashboard from './components/ProjectDashboard';
 import QuilEditor from './components/QuilEditor';
 import ChatComponent from './components/ChatComponent';
-import Test from './components/Test';
+//import Test from './components/Test';
 import Navbar from './components/Navbar';
 import CardProject from './components/CardProject';
 import ClubDashBoard from './components/ClubDashBoard';
@@ -19,9 +19,7 @@ function App() {
         <div className='content'>
           <Navbar />
           <Switch>
-            <Route exact path="/">
-              <TeamDashboard />
-            </Route>
+           
             <Route exact path="/project">
               <ProjectDashboard />
             </Route>
@@ -34,21 +32,15 @@ function App() {
             <Route exact path="/chat">
               <ChatComponent />
             </Route>
-            <Route exact path="/test">
-              <Test />
-            </Route>
+          
             <Route exact path="/team">
               <TeamDashboard />
             </Route>
-            <Route exact path="/card">
-              <CardProject />
-            </Route>
+            
             <Route exact path="/club">
               <ClubDashBoard />
             </Route>
-            <Route exact path="/test">
-              <Test />
-            </Route>
+           
           </Switch>
         </div>
       </div>
@@ -61,3 +53,12 @@ export default App;
 // <div className="App bg-slate-300">
 //   <TeamDashboard />
 // </div>
+/*
+ <Route exact path="/test">
+              <Test />
+            </Route>
+
+              <Route exact path="/test">
+              <Test />
+            </Route>
+*/

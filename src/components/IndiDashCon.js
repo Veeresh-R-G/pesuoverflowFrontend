@@ -1,6 +1,6 @@
 import ProMeter from './ProgresMeter';
 import img1 from './des.png';
-const IndiDashCon = () => {
+const IndiDashCon = ({name,photoURL,phone,email,projects,clubs,interests,ticket}) => {
     let NAME_HERE = "<NAME>";
     let PROJECT_NAME_HERE = "<PROJECT>"
     let options = ["opt1", "opt1", "opt1", "opt1"]
@@ -8,7 +8,7 @@ const IndiDashCon = () => {
 
 
     return (
-        <div className="flex flex-row dash-main text-black w-full h-screen mt-4 mb-6">
+        <div className="flex flex-row dash-main text-black w-full h-screen mt-4 mb-6 font-google-sans">
 
 
             {
@@ -29,45 +29,47 @@ const IndiDashCon = () => {
                 */
             }
             <div className="indi-content w-myWidth rounded-lg border-[6px] border-slate-400 bg-gray-100 ml-72 pl-2 mt-14">
-                <img src={img1} alt="" className="w-16 h-16 rounded-lg mt-2" />
+                <div>
+                <img src={photoURL} alt="" className="w-60 h-60 rounded-lg mt-2" />
                 <span className='relative'>
-                    <h1 className='text-4xl font-black uppercase ml-20 pb-2 animate-bounce'>
-                        <span>HEy, i am  </span>
-                        <span className="underline">{NAME_HERE}</span>
+                    <h1 className='text-4xl font-black uppercase ml-20 pb-2 '>
+                        <span>Hey, i am  </span>
+                        <span className="underline">{name}</span>
                     </h1>
+                    <h3 className='mt-3 font-semibold'>Wanna get in touch?Hit me Up at : </h3>
+                    <p>{email}</p>
+                    <p>{phone}</p>
+                
                 </span>
-
-
+                </div>                            
                 <div className="text-xl ml-28">
                     <h3 className='font-semibold'>I am interested in :</h3>
                     <ol>
-                        {options.map((item) =>
+                        {interests.map((item) =>
                             <li className='text-lg'>-{item}</li>)}
                     </ol>
 
                     <h3 className='mt-4 font-semibold'>Projects :</h3>
                     <ol>
-                        {option2.map((item) =>
-                            <li className='text-lg'>-{item}</li>)}
+                        {projects.map(({post,project}) =>
+                            <li className='text-lg'>-{post} at {project.title}</li>)}
                     </ol>
 
                     <h3 className='mt-4 font-semibold'>Clubs :</h3>
                     <ol>
-                        {option2.map((item) =>
-                            <li className='text-lg'>-{item}</li>)}
+                        {clubs.map(({post,club}) =>
+                            <li className='text-lg'>-{post} at {club.name}</li>)}
                     </ol>
 
-                    <h3 className='mt-3 font-semibold'>Wanna get in touch?Hit me Up at : </h3>
-                    <p>email@gmail.com</p>
-                    <p>0000000000</p>
+                  
                 </div>
 
             </div>
 
             <div className="team-logo-here border-[6px] border-gray-400 bg-white rounded-lg ml-7 mt-14">
                 <h1 className="font-medium text-3xl mt-2 mb-3 mx-10">Current Ticket:</h1>
-                <h1 className='mx-14'>{NAME_HERE} of {PROJECT_NAME_HERE}</h1>
-                <ProMeter />
+                <h1 className='mx-14'>{ticket.name} of the Project,<bold className="font-semibold"> {ticket.header.project.title}</bold></h1>
+                <ProMeter statusNum={ticket.status.statusNum}/>
                 <h1 className='font-semibold text-2xl mx-16 mt-5'>Quick Links:</h1>
                 <div className="links-project ml-20 text-lg">
                     {/* 

@@ -17,7 +17,7 @@ const ProMeter = (props) => {
 
                 colors={["#FF5F6D", "#AAFF00"]}
                 arcWidth={0.2}
-                percent={0.37}
+                percent={props.statusNum/100}
             />
         </div>
     );
