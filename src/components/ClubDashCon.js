@@ -72,12 +72,13 @@ const ClubDashCon = () => {
                         <p> &nbsp;--{item}</p>)}
                 </div>
                 <div className="mt-20 mb-44 carousel-here ml-20 ">
+                    <h1 className='det'>Gallery :</h1>
                     <marquee id="mymarq2" behavior="scroll" direction="left"
-                        className='w-myWidth h-auto text-lg border-4 border-slate-300 rounded-xl p-4 '
+                        className='w-myWidth h-auto text-lg border-8 border-green-700 rounded-xl p-10 pt-5 '
                         onMouseEnter={handleMouseOver2}
                         onMouseLeave={handleMouseDown2}>
                         {option4.map((item) =>
-                            <img src={img1} className='inline w-24 h-24 mr-5'></img>)}
+                            <img src={img1} className='inline w-28 h-28 mr-5'></img>)}
                     </marquee>
                 </div>
             </div>
@@ -89,8 +90,8 @@ const ClubDashCon = () => {
                 {/* // eslint-disable-next-line jsx-a11y/no-distracting-elements */}
 
                 <marquee id="mymarq" behavior="scroll" direction="up"
-                    className='w-48 h-auto pl-20 text-lg border-4 border-slate-300 rounded-xl 
-                    hover:bg-slate-700 hover:text-white hover:border-white'
+                    className='w-48 h-auto pl-16 text-lg border-4 border-slate-300 rounded-xl 
+                    hover:bg-slate-300 hover:text-white hover:border-white'
                     onMouseEnter={handleMouseOver}
                     onMouseLeave={handleMouseDown}>
                     {option4.map((item) =>

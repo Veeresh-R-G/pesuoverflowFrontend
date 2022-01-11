@@ -9,16 +9,20 @@ import ChatComponent from './components/ChatComponent';
 import Navbar from './components/Navbar';
 import CardProject from './components/CardProject';
 import ClubDashBoard from './components/ClubDashBoard';
-import ClubDashCon from './components/ClubDashCon';
+import Login from './components/Login';
+import ErrorPage from './components/ErrorPage';
+import Register from './components/Register';
+import Test from './components/Test';
 function App() {
   return (
 
     <Router>
       <div className="App">
         <div className='content'>
-          <Navbar />
+
           <Switch>
             <Route exact path="/">
+              <Navbar />
               <TeamDashboard />
             </Route>
             <Route exact path="/project">
@@ -41,6 +45,24 @@ function App() {
             </Route>
             <Route exact path="/club">
               <ClubDashBoard />
+            </Route>
+            <Route exact path="/login">
+              <Login />
+            </Route>
+            <Route exact path="/login">
+              <Login />
+            </Route>
+            <Route exact path="/error">
+              <ErrorPage />
+            </Route>
+            <Route exact path="/reg">
+              <Register />
+            </Route>
+            <Route exact path="/test">
+              <Test />
+            </Route>
+            <Route>
+              <ErrorPage />
             </Route>
           </Switch>
         </div>

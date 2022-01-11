@@ -1,5 +1,4 @@
 import IndiDashCon from './IndiDashCon';
-
 const Dashboard = (props) => {
 
     return (

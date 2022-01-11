@@ -8,7 +8,7 @@ const IndiDashCon = () => {
 
 
     return (
-        <div className="flex flex-row dash-main text-black w-full h-screen mt-4 mb-6">
+        <div className="flex flex-row dash-main text-black w-full h-auto mt-4 mb-6">
 
 
             {
@@ -29,13 +29,23 @@ const IndiDashCon = () => {
                 */
             }
             <div className="indi-content w-myWidth rounded-lg border-[6px] border-slate-400 bg-white ml-72 pl-2 mt-14">
-                <img src={img1} alt="" className="w-16 h-16 rounded-lg mt-2" />
-                <span className='relative'>
-                    <h1 className='text-4xl font-black uppercase ml-20 pb-2 animate-bounce'>
-                        <span>HEy, i am  </span>
-                        <span className="underline">{NAME_HERE}</span>
-                    </h1>
-                </span>
+                <div className='flex flex-row'>
+                    <img src={img1} alt="" className="w-60 h-60 rounded-lg ml-5" />
+                    <span>
+                        <h1 className='uppercase ml-14 mt-20 pb-2'>
+                            <div className='bouncy animate-bounce'>
+                                <span className='font-bold text-3xl'>HEy, i am  </span>
+                                <span className=" font-bold text-3xl underline">{NAME_HERE}</span>
+                            </div>
+                        </h1>
+                        <div className='ml-14'>
+                            <h3 className='mt-3 text-xl '>Wanna get in touch?Hit me Up at : </h3>
+                            <p>email@gmail.com</p>
+                            <p>0000000000</p>
+                        </div>
+                    </span>
+                </div>
+
 
 
                 <div className="text-xl ml-28">
@@ -57,9 +67,7 @@ const IndiDashCon = () => {
                             <li className='text-lg'>-{item}</li>)}
                     </ol>
 
-                    <h3 className='mt-3 font-semibold'>Wanna get in touch?Hit me Up at : </h3>
-                    <p>email@gmail.com</p>
-                    <p>0000000000</p>
+
                 </div>
 
             </div>
