@@ -1,6 +1,6 @@
 import ProMeter from './ProgresMeter';
 import img1 from './des.png';
-const IndiDashCon = ({name,photoURL,phone,email,projects,clubs,interests,ticket}) => {
+const IndiDashCon = ({ name, photoURL, phone, email, projects, clubs, interests, ticket }) => {
     let NAME_HERE = "<NAME>";
     let PROJECT_NAME_HERE = "<PROJECT>"
     let options = ["opt1", "opt1", "opt1", "opt1"]
@@ -29,19 +29,23 @@ const IndiDashCon = ({name,photoURL,phone,email,projects,clubs,interests,ticket}
                 */
             }
             <div className="indi-content w-myWidth rounded-lg border-[6px] border-slate-400 bg-gray-100 ml-72 pl-2 mt-14">
-                <div>
-                <img src={photoURL} alt="" className="w-60 h-60 rounded-lg mt-2" />
-                <span className='relative'>
-                    <h1 className='text-4xl font-black uppercase ml-20 pb-2 '>
-                        <span>Hey, i am  </span>
-                        <span className="underline">{name}</span>
-                    </h1>
-                    <h3 className='mt-3 font-semibold'>Wanna get in touch?Hit me Up at : </h3>
-                    <p>{email}</p>
-                    <p>{phone}</p>
-                
-                </span>
-                </div>                            
+                <div className='flex flex-row'>
+                    <img src={photoURL} alt="" className="w-60 h-60 rounded-lg ml-5" />
+                    <span>
+                        <h1 className='uppercase ml-14 mt-20 pb-2 '>
+                            <div className='bouncy animate-bounce'>
+                                <span className='font-bold text-3xl'>HEy, i am  </span>
+                                <span className=" font-bold text-3xl underline">{name}</span>
+                            </div>
+                        </h1>
+                        <div className='ml-14'>
+                            <h3 className='mt-3 text-xl '>Wanna get in touch?Hit me Up at : </h3>
+                            <p>{email}</p>
+                            <p>{phone}</p>
+                        </div>
+
+                    </span>
+                </div>
                 <div className="text-xl ml-28">
                     <h3 className='font-semibold'>I am interested in :</h3>
                     <ol>
@@ -51,17 +55,17 @@ const IndiDashCon = ({name,photoURL,phone,email,projects,clubs,interests,ticket}
 
                     <h3 className='mt-4 font-semibold'>Projects :</h3>
                     <ol>
-                        {projects.map(({post,project}) =>
+                        {projects.map(({ post, project }) =>
                             <li className='text-lg'>-{post} at {project.title}</li>)}
                     </ol>
 
                     <h3 className='mt-4 font-semibold'>Clubs :</h3>
                     <ol>
-                        {clubs.map(({post,club}) =>
+                        {clubs.map(({ post, club }) =>
                             <li className='text-lg'>-{post} at {club.name}</li>)}
                     </ol>
 
-                  
+
                 </div>
 
             </div>
@@ -69,7 +73,7 @@ const IndiDashCon = ({name,photoURL,phone,email,projects,clubs,interests,ticket}
             <div className="team-logo-here border-[6px] border-gray-400 bg-white rounded-lg ml-7 mt-14">
                 <h1 className="font-medium text-3xl mt-2 mb-3 mx-10">Current Ticket:</h1>
                 <h1 className='mx-14'>{ticket.name} of the Project,<bold className="font-semibold"> {ticket.header.project.title}</bold></h1>
-                <ProMeter statusNum={ticket.status.statusNum}/>
+                <ProMeter statusNum={ticket.status.statusNum} />
                 <h1 className='font-semibold text-2xl mx-16 mt-5'>Quick Links:</h1>
                 <div className="links-project ml-20 text-lg">
                     {/* 
@@ -93,5 +97,4 @@ const IndiDashCon = ({name,photoURL,phone,email,projects,clubs,interests,ticket}
     );
 }
 
-export default IndiDashCon
-    ;
+export default IndiDashCon;
