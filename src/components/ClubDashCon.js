@@ -73,7 +73,7 @@ const ClubDashCon = () => {
                         <p> &nbsp;--{item}</p>)}
                 </div>
                 <div className="mt-20 mb-44 carousel-here ml-10 mr-10 h-96">
-                    <h1 className='det'>Gallery :</h1>
+                    <h1 className='text-4xl font-semibold'>Gallery :</h1>
                     <CarouselCompo />
                     {/* <marquee id="mymarq2" behavior="scroll" direction="left"
                         className='w-myWidth h-auto text-lg border-8 border-green-700 rounded-xl p-10 pt-5 '

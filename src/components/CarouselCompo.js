@@ -2,6 +2,7 @@ import { useState } from "react";
 import Carousel from 'react-elastic-carousel'
 import CarouselItem from "./CarouselItem";
 import './carousel.css'
+import img1 from './des.png';
 const CarouselCompo = () => {
     //This is the Parameter that makes the Carousel Responsive
     const breakPoints = [
@@ -13,11 +14,15 @@ const CarouselCompo = () => {
     return (
         <div className="carousel-Component">
             <Carousel breakPoints={breakPoints}>
-                <CarouselItem></CarouselItem>
-                <CarouselItem></CarouselItem>
-                <CarouselItem></CarouselItem>
-                <CarouselItem></CarouselItem>
-                <CarouselItem></CarouselItem>
+                <CarouselItem><img src={img1} alt="" /></CarouselItem>
+                <CarouselItem><img src={img1} alt="" /></CarouselItem>
+                <CarouselItem><img src={img1} alt="" /></CarouselItem>
+                <CarouselItem><img src={img1} alt="" /></CarouselItem>
+                <CarouselItem><img src={img1} alt="" /></CarouselItem>
+                <CarouselItem><img src={img1} alt="" /></CarouselItem>
+                <CarouselItem><img src={img1} alt="" /></CarouselItem>
+                <CarouselItem><img src={img1} alt="" /></CarouselItem>
+
             </Carousel>
         </div>
     );
