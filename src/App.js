@@ -12,7 +12,7 @@ import ClubDashBoard from './components/ClubDashBoard';
 import Login from './components/Login';
 import ErrorPage from './components/ErrorPage';
 import Register from './components/Register';
-import Test from './components/Test';
+import CarouselCompo from './components/CarouselCompo';
 function App() {
   return (
 
@@ -58,8 +58,8 @@ function App() {
             <Route exact path="/reg">
               <Register />
             </Route>
-            <Route exact path="/test">
-              <Test />
+            <Route exact path="/car">
+              <CarouselCompo />
             </Route>
             <Route>
               <ErrorPage />

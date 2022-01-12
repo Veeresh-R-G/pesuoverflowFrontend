@@ -1,5 +1,6 @@
 import img1 from './des.png';
 import CardProject from "./CardProject";
+import CarouselCompo from './CarouselCompo';
 const ClubDashCon = () => {
 
     let CLUB_NAME_HERE = "<CLUB_NAME>"
@@ -71,15 +72,16 @@ const ClubDashCon = () => {
                     {option3.map(item =>
                         <p> &nbsp;--{item}</p>)}
                 </div>
-                <div className="mt-20 mb-44 carousel-here ml-20 ">
+                <div className="mt-20 mb-44 carousel-here ml-10 mr-10 h-96">
                     <h1 className='det'>Gallery :</h1>
-                    <marquee id="mymarq2" behavior="scroll" direction="left"
+                    <CarouselCompo />
+                    {/* <marquee id="mymarq2" behavior="scroll" direction="left"
                         className='w-myWidth h-auto text-lg border-8 border-green-700 rounded-xl p-10 pt-5 '
                         onMouseEnter={handleMouseOver2}
                         onMouseLeave={handleMouseDown2}>
                         {option4.map((item) =>
                             <img src={img1} className='inline w-28 h-28 mr-5'></img>)}
-                    </marquee>
+                    </marquee> */}
                 </div>
             </div>
 

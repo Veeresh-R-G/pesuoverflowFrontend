@@ -1,5 +1,5 @@
 import { useState } from "react";
-const RoundedButtonCompo = () => {
+const RoundedButtonCompo = (props) => {
     let beforeClickStyles = {
         backgroundColor: "white",
         color: "#9C28D9"
@@ -20,15 +20,18 @@ const RoundedButtonCompo = () => {
 
         <div className="rounded-button-component" >
 
-            <button onClick={console.log("I got Clicked Now give me parrty ! ")}
-                className="hover:bg-slate-200 bg-white font-semibold text-violet-700 
+            <a href="/indi">
+                <button onClick={console.log("I got Clicked Now give me parrty ! ")}
+                    className="hover:bg-slate-300 bg-white font-semibold text-violet-700 
                 border-2 border-violet-600 rounded-xxl p-1 w-20 mb-1 outline-none"
-                style={styles}
+                    style={styles}
 
-                onClick={changeStyles}>
-                hehehe
+                    onClick={changeStyles}>
 
-            </button>
+                    {props.interest}
+
+                </button>
+            </a>
         </div>
     );
 }

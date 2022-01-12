@@ -33,6 +33,7 @@ module.exports = {
         'myWidth4': '75rem', //this is for Quil - Board styling
         'myWidth5': '18rem', //this is for Card styling in the project-part
         'myWidth6': '21rem', //this is for Error Page Styling
+        'myWidth7': '31rem', //this is for Error Page Styling
       }
     },
   },

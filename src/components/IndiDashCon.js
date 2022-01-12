@@ -1,10 +1,11 @@
 import ProMeter from './ProgresMeter';
 import img1 from './des.png';
+import RoundedButtonCompo from './RoundedButtonCompo'
 const IndiDashCon = () => {
     let NAME_HERE = "<NAME>";
     let PROJECT_NAME_HERE = "<PROJECT>"
-    let options = ["opt1", "opt1", "opt1", "opt1"]
     let option2 = ["opt1", "opt1", "opt1"]
+    let options = ["opt1", "opt1", "opt1", "opt1", ...option2];
 
 
     return (
@@ -48,23 +49,30 @@ const IndiDashCon = () => {
 
 
 
-                <div className="text-xl ml-28">
-                    <h3 className='font-semibold'>I am interested in :</h3>
+                <div className=" ml-28">
+                    <h3 className='font-semibold text-xl'>I am interested in :</h3>
+
+                    <div className="grid grid-cols-4 w-myWidth6">
+
+                        {options.map((item) => {
+                            return <RoundedButtonCompo interest={item} />
+                        })}
+
+                    </div>
+
+
+                    <h3 className='mt-4 font-semibold text-xl'>Projects :</h3>
                     <ol>
-                        {options.map((item) =>
-                            <li className='text-lg'>-{item}</li>)}
+                        {options.map((item) => {
+                            return <RoundedButtonCompo interest={item} />
+                        })}
                     </ol>
 
-                    <h3 className='mt-4 font-semibold'>Projects :</h3>
+                    <h3 className='mt-4 font-semibold text-xl'>Clubs :</h3>
                     <ol>
-                        {option2.map((item) =>
-                            <li className='text-lg'>-{item}</li>)}
-                    </ol>
-
-                    <h3 className='mt-4 font-semibold'>Clubs :</h3>
-                    <ol>
-                        {option2.map((item) =>
-                            <li className='text-lg'>-{item}</li>)}
+                        {options.map((item) => {
+                            return <RoundedButtonCompo interest={item} />
+                        })}
                     </ol>
 
 
