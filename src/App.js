@@ -13,6 +13,8 @@ import Login from './components/Login';
 import ErrorPage from './components/ErrorPage';
 import Register from './components/Register';
 import CarouselCompo from './components/CarouselCompo';
+import ReactTagsDemo from './components/ReactTagsCompo'
+import Home from './components/Home';
 function App() {
   return (
 
@@ -26,6 +28,7 @@ function App() {
               <TeamDashboard />
             </Route>
             <Route exact path="/project">
+              <Navbar />
               <ProjectDashboard />
             </Route>
             <Route exact path="/indi">
@@ -61,6 +64,17 @@ function App() {
             <Route exact path="/car">
               <CarouselCompo />
             </Route>
+            <Route exact path="/tags">
+              <ReactTagsDemo />
+            </Route>
+            <Route exact path="/home">
+              <Home />
+            </Route>
+            <Route exact path="/trello">
+
+              {/* Render here */}
+            </Route>
+
             <Route>
               <ErrorPage />
             </Route>

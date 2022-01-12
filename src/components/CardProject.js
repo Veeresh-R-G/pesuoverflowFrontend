@@ -6,7 +6,7 @@ const CardProject = () => {
 
         <div className="mr-2 mb-3 transition hover:translate-y-2 ">
             <a href='/card' className="">
-                <Card className="border-4 border-violet-600 w-myWidth5 h-48 rounded-xl bg-white hover:bg-slate-100">
+                <Card className="border border-violet-600 w-myWidth5 h-48 rounded-xl bg-white hover:bg-slate-100">
                     <div className="border-b-2 border-violet-600 drop-shadow-xl mt-2 mx-10">
                         <Card.Img variant="top" src={img1} className="ml-16 rounded-xxl border-4 border-white h-20 w-20 " />
                     </div>

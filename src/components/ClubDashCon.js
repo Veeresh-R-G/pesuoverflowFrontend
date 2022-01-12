@@ -15,14 +15,6 @@ const ClubDashCon = () => {
         let marq = document.getElementById("mymarq");
         marq.start();
     }
-    function handleMouseOver2() {
-        let marq = document.getElementById("mymarq2");
-        marq.stop();
-    }
-    function handleMouseDown2() {
-        let marq = document.getElementById("mymarq2");
-        marq.start();
-    }
     return (
         <div className="flex flex-row dash-main pl-1 h-full mt-4 mb-6">
             {
@@ -42,7 +34,7 @@ const ClubDashCon = () => {
                     We are going to access all details through props
                 */
             }
-            <div className="indi-content w-myWidth3 rounded-lg border-[4px] border-slate-400 bg-gray-100 ml-64 mr-1 pl-4 mt-14">
+            <div className="indi-content w-myWidth3 rounded-lg border-[2px] border-slate-400 bg-gray-100 ml-64 mr-1 pl-4 mt-14">
                 <img src={img1} alt="" className="w-56 h-56 rounded-lg mt-2 float-left mr-5" />
 
                 <div className='relative'>
@@ -72,27 +64,20 @@ const ClubDashCon = () => {
                     {option3.map(item =>
                         <p> &nbsp;--{item}</p>)}
                 </div>
-                <div className="mt-20 mb-44 carousel-here ml-10 mr-10 h-96">
-                    <h1 className='text-4xl font-semibold'>Gallery :</h1>
+                <div className="my-12 carousel-here mx-48 h-128">
+                    <h1 className='text-4xl font-semibold mb-14 '>Gallery :</h1>
                     <CarouselCompo />
-                    {/* <marquee id="mymarq2" behavior="scroll" direction="left"
-                        className='w-myWidth h-auto text-lg border-8 border-green-700 rounded-xl p-10 pt-5 '
-                        onMouseEnter={handleMouseOver2}
-                        onMouseLeave={handleMouseDown2}>
-                        {option4.map((item) =>
-                            <img src={img1} className='inline w-28 h-28 mr-5'></img>)}
-                    </marquee> */}
                 </div>
             </div>
 
-            <div className="team-logo-here border-[4px] w-myWidth5  border-gray-400 bg-white rounded-lg mt-14 p-5">
+            <div className="team-logo-here border-[2px] w-myWidth5  border-gray-400 bg-white rounded-lg mt-14 p-5">
 
                 <h1 className="text-3xl font-semibold mb-10">Wall Of Fame</h1>
 
                 {/* // eslint-disable-next-line jsx-a11y/no-distracting-elements */}
 
                 <marquee id="mymarq" behavior="scroll" direction="up"
-                    className='w-48 h-auto pl-16 text-lg border-4 border-slate-300 rounded-xl 
+                    className='w-48 h-52 pl-16 text-lg border-4 border-slate-300 rounded-xl 
                     hover:bg-slate-300 hover:text-white hover:border-white'
                     onMouseEnter={handleMouseOver}
                     onMouseLeave={handleMouseDown}>

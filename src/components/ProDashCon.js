@@ -7,7 +7,7 @@ const ProDashCon = () => {
     let XXX = "Project_Head"
     let option3 = ["pro1", "pro1", "pro1"]
     return (
-        <div className="flex flex-row dash-main text-black w-full pl-1  h-auto mt-4 mb-6">
+        <div className="flex flex-row dash-main text-black w-full pl-1 h-auto mt-4 mb-6">
 
 
             {
@@ -27,7 +27,7 @@ const ProDashCon = () => {
                     We are going to access all details through props
                 */
             }
-            <div className="indi-content w-myWidth3 rounded-lg border-[4px] border-slate-400 bg-gray-100 ml-64 mr-1 pl-4 mt-14">
+            <div className="indi-content w-myWidth3 rounded-lg border-[2px] border-slate-400 bg-gray-100 ml-64 mr-1 pl-4 mt-14">
                 <img src={img1} alt="" className="w-56 h-56 rounded-lg mt-2 float-left mr-5" />
 
                 <div className='relative'>
@@ -64,7 +64,7 @@ const ProDashCon = () => {
                 </div>
             </div>
 
-            <div className="team-logo-here border-[4px] border-gray-400 bg-white rounded-lg  mt-14">
+            <div className="team-logo-here border-[2px] border-gray-400 bg-white rounded-lg  mt-14">
                 <h1 className="font-medium text-3xl mt-2 mb-3 mx-9">Ticket Directory:</h1>
                 <h1 className='mx-14'>{NAME_HERE} of {PROJECT_NAME_HERE}</h1>
                 <ProMeter />

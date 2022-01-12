@@ -29,7 +29,7 @@ const IndiDashCon = () => {
                     We are going to access all details through props
                 */
             }
-            <div className="indi-content w-myWidth rounded-lg border-[6px] border-slate-400 bg-white ml-72 pl-2 mt-14">
+            <div className="indi-content w-myWidth rounded-lg border-[3px] border-slate-400 bg-white ml-72 pl-2 mt-14">
                 <div className='flex flex-row'>
                     <img src={img1} alt="" className="w-60 h-60 rounded-lg ml-5" />
                     <span>
@@ -80,7 +80,7 @@ const IndiDashCon = () => {
 
             </div>
 
-            <div className="team-logo-here border-[6px] border-gray-400 bg-white rounded-lg ml-7 mt-14">
+            <div className="team-logo-here border-[3px] border-gray-400 bg-white rounded-lg ml-7 mt-14">
                 <h1 className="font-medium text-3xl mt-2 mb-3 mx-10 uppercase">Current Ticket:</h1>
                 <h1 className='mx-14'>{NAME_HERE} of {PROJECT_NAME_HERE}</h1>
                 <ProMeter />

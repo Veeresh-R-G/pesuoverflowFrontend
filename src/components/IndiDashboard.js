@@ -3,7 +3,7 @@ const Dashboard = (props) => {
 
     return (
 
-        <div className="indi-dash flex flex-col bg-slate-300 h-full">
+        <div className="indi-dash flex flex-col bg-slate-300/80 h-full">
 
             {
                 /*
