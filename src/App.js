@@ -17,6 +17,7 @@ import ReactTagsDemo from './components/ReactTagsCompo'
 import Home from './components/Home';
 import TrelloCompo from './components/TrelloCompo'
 import Details from './components/Details';
+import SearchComponent from './components/SearchComponent';
 function App() {
   return (
 
@@ -77,6 +78,9 @@ function App() {
             </Route>
             <Route exact path="/details">
               <Details />
+            </Route>
+            <Route exact path="/s">
+              <SearchComponent />
             </Route>
 
             <Route>

@@ -24,7 +24,7 @@ const Navbar = (props) => {
     return (
         <div style={{ margin: "0px", padding: "0" }}>
             <button className='absolute'>
-                <BsArrowRightCircle className={!navbar ? openNavbar : closedNavbar}
+                <GoThreeBars className={!navbar ? openNavbar : closedNavbar}
                     onClick={showNavbar} />
             </button>
 
@@ -35,8 +35,8 @@ const Navbar = (props) => {
                 <h1 className="text-4xl font-extrabold pr-4 text-violet-800">  PESU
                     <span className="text-black text-lg ml-20" >
                         <button onClick={() => { console.log("heheh") }}>
-                            <BsArrowLeftCircle
-                                className='w-8 h-8 rounded-xxl text-violet-700
+                            <GoThreeBars
+                                className='w-8 h-8  text-violet-700
                         hover:bg-violet-700 hover:text-white'
                                 onClick={showNavbar}
                             />
