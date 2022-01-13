@@ -1,0 +1,77 @@
+.list-container {
+  background-color: #ebecf0;
+  width: 300px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  padding-bottom: 20px;
+}
+
+.edit {
+  margin-left: 8px;
+  background-color: transparent;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: large;
+  font-weight: 500;
+}
+
+.editable-container {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-around;
+  margin: 10px;
+}
+
+.editable-container > .icon {
+  height: 20px;
+  width: 20px;
+  position: relative;
+  right: 0px;
+  top: 10px;
+  margin: 10px;
+}
+
+.AddCard {
+  display: flex;
+  margin-left: 10px;
+  margin-top: 14px;
+  font-size: large;
+  width: 250px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #6523ba;
+  color: white;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.AddCard:hover {
+  background-color: white;
+  color: #6523ba;
+  border: solid 1px #6523ba;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+}
+
+.icon:hover {
+  background-color: gray;
+  border-radius: 30px;
+  padding: 2px;
+}
+
+.Input {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.button {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10px;
+  margin-right: 10px;
+}

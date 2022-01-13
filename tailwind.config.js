@@ -5,7 +5,10 @@ module.exports = {
   theme: {
 
     extend: {
-
+      padding: {
+        '13': '13px',
+        '25': '25px',
+      },
       colors: {
         primary: "#ff4800",
         blue:

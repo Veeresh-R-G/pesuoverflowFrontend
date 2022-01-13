@@ -15,5 +15,5 @@
 }
 
 .regStyle {
-  @apply p-3 rounded-lg mb-5 bg-gray-50 shadow-md focus:outline-none focus:border-2 border-violet-500;
+  @apply p-3 rounded-lg mb-5 bg-gray-50 shadow-md focus:outline-none focus:border-2 border-black;
 }

@@ -11,10 +11,10 @@ const CardProject = () => {
                         <Card.Img variant="top" src={img1} className="ml-16 rounded-xxl border-4 border-white h-20 w-20 " />
                     </div>
 
-                    <Card.Body className="p-3 flex justify-center items-center flex-col">
+                    <Card.Body className="flex flex-col justify-center items-center ">
                         <Card.Title className="text-lg font-bold">{NAME}</Card.Title>
                         <Card.Text>
-                            <h1 className='mt-2'>POST HERE</h1>
+                            <h1 className='mt-3'>POST HERE</h1>
                         </Card.Text>
                         {
                             /*
