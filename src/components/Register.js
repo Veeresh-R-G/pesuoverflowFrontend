@@ -16,27 +16,27 @@ const Register = () => {
                         Enjoy Coding
                     </p>
                     <br />
-
-
-
                 </div>
-                <div className="flex items-center mt-10 flex-col">
+
+
+                <div className="flex items-center mt-20 flex-col">
                     <input type="text" placeholder="Name" name="name" className="regStyle" />
                     <input type="email" placeholder="Email" name="email" className="regStyle" />
                     <input type="text" placeholder="Phone Number" name="phone" className="regStyle" />
                     <input type="text" placeholder="Photo URL" name="photo" className="regStyle" />
-                    <div className="register-tags">
-                        <div className="mx-10 focus:outline-none focus:border-2 border-black outline-black">
-                            <Tags />
-                        </div>
 
-                    </div>
 
-                    <a href="/"><button type="submit" className="bg-black text-lg px-24 py-3 text-gray-100 font-semibold rounded-xl outline outline-3 m-4 hover:bg-white hover:text-black hover:outline-black">Register</button></a>
+                    <a href="/">
+                        <button type="submit"
+                            className="bg-black text-lg px-24 py-3 text-gray-100 
+                                    font-semibold rounded-xl outline outline-3 m-4 hover:bg-white 
+                                    hover:text-black hover:outline-black">
 
+                            Register
+
+                        </button>
+                    </a>
                 </div>
-
-
             </div>
         </div>
     );
