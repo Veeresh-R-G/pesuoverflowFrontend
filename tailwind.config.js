@@ -36,6 +36,9 @@ module.exports = {
         'myWidth5': '18rem', //this is for Card styling in the project-part
         'myWidth6': '21rem', //this is for Error Page Styling
         'myWidth7': '31rem', //this is for Error Page Styling
+      },
+      margin: {
+        '128': '34rem',
       }
     },
   },

@@ -28,6 +28,7 @@
     "react-select": "^5.2.1",
     "react-tag-autocomplete": "^6.3.0",
     "react-tag-input": "^6.7.3",
+    "react-tag-input-component": "^1.0.7",
     "react-tagsinput": "^3.19.0",
     "styled-components": "^5.3.3",
     "uuid": "^8.3.2",

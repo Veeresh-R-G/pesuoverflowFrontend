@@ -16,6 +16,7 @@ import CarouselCompo from './components/CarouselCompo';
 import ReactTagsDemo from './components/ReactTagsCompo'
 import Home from './components/Home';
 import TrelloCompo from './components/TrelloCompo'
+import Tags from './components/Tags';
 function App() {
   return (
 
@@ -72,8 +73,10 @@ function App() {
               <Home />
             </Route>
             <Route exact path="/trello">
-
               <TrelloCompo />
+            </Route>
+            <Route exact path="/test">
+              <Tags />
             </Route>
 
             <Route>
