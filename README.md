@@ -1,6 +1,6 @@
 # ____OverFlow Front-End 
 
-### Read This a little when using the rounded button component
+### Read This for using the rounded button component
 ### Use the below styling 
 <br></br>
 
